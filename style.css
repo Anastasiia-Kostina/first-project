@@ -1,1 +1,153 @@
 /*Сказали, что нужно добавить стили. А куда и стили чего вообще? В общем, хз. Это просто тренировочный коммит. Аминь его пухом!*/
+.page {
+  background-color: rgb(255, 255, 255);
+  color: rgb(108, 0, 108);
+  font-family: 'Arial Narrow';
+  padding: 40px 0;
+ }
+
+ /*.left-block {
+  margin: 5% 80% 80%;
+ }*/
+
+ .page__menu {
+  background-color: rgba(204, 246, 0, .6);
+  margin: auto;
+  margin-right: 85%;
+  padding: .8% 1%;
+  position: sticky;
+  top:150px;
+  left: 20px;
+  right: 80%;
+  /*C z-index: -1 не перекрывает текст, но не активны ссылки*>
+  /*Здесь нужен был position fixed, без него меню расплывалось вдлину*/
+  /*Я ему присвоила fixed и он уже не подчиняется жругим боксам, так что самостоятельные параметры задаю*/
+  display: flex;
+  /*flex-wrap: wrap;*/
+  flex-direction: column;
+  /*Эти параметры главнее т.к. когда column был в menu, он не действовал, наверное не наследуется, но лень проверять.*/
+  font-family: 'Arial';
+  font-weight: 600;
+ }
+
+ /*.page__menu_style {
+  /*background-color: #CCF600;*/
+  /*color: #FFF;*/
+  /*font-family: 'Arial';
+  font-weight: 600;
+ }*/
+
+ .centered-block {
+  margin: auto;
+  /*При изменении всё улетает*/
+ }
+
+ header {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  max-width: 1400px;
+  min-width: 20%;
+  align-items: center;
+  text-align: center;
+  /*position: relative;*/
+  /*top: 10px;*/
+ }
+
+ .header_style {
+  background-color: rgb(210, 53, 210);
+  color: rgb(108, 0, 108);
+  font-size: 38px;
+  font-weight: 600;
+ }
+
+ menu {
+  /*background-color: #CCF600;*/
+  display: flex;
+  /*flex-direction: column;
+  justify-content: center;*/
+  min-height: 30%px;
+  /*align-items: center;*/
+  max-width: 20%;
+  min-width: 20%;
+  /*margin: 20% 20%;*/
+  padding: 20%;
+  position: fixed;
+  
+  /*top:100px;
+  left: 40px;*/
+ }
+
+ /*.page__menu {
+  background-color: #CCF600;
+  margin: auto;
+  position: fixed;
+  top:40px;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .page__menu_style {
+  /*background-color: #CCF600;*/
+  /*color: #FFF;*/
+ /* font-family: 'Arial';
+  font-weight: 600;
+ }*/
+
+ .menu__link {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-right: 20px;
+ }
+
+ .menu__link:hover {
+  font-size: 18px;
+  color: rgb(108, 0, 108);
+  margin-right: 20px;
+}
+
+ content {
+  max-width: 1400px;
+  min-width: 1200px;
+  display: flex;
+ }
+
+ .content__title {
+  font-size: 28px;
+  margin: 0 0 40p;
+  text-align: center;
+
+ }
+
+ .content__text {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 5px;
+  align-items: bottom;
+  text-align: center;
+}
+
+.content__text_sub {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  min-width: 60%;
+  
+  /*min width ограничивала бокс*/
+ }
+
+ .footer_style {
+  background-color: rgb(210, 53, 210);
+  color: rgb(108, 0, 108);
+  font-family: 'Arial Narrow';
+ }
